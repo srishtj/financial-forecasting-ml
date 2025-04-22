@@ -1,6 +1,7 @@
 # Web Scraping
 requests
 beautifulsoup4
+yfinance
 
 # Data Handling
 pandas
