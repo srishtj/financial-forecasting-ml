@@ -12,15 +12,15 @@ def get_historical_data(ticker, start_date, end_date):
     return df
 
 
-if __name__ == "__main__":
-    ticker = "AAPL"
-    start = "2023-01-01"
-    end = datetime.today().strftime('%Y-%m-%d')
+# getting sample data for models
+tickers = ["AAPL", "TSLA", "MSFT", "GOOGL", "AMZN"]
+start = "2023-01-01"
+end = datetime.today().strftime('%Y-%m-%d')
 
+os.makedirs("data/sample", exist_ok=True)
+
+for ticker in tickers:
     df = get_historical_data(ticker, start, end)
-    print(df.head())
-
-    os.makedirs("data/raw", exist_ok=True)
-    filename = f"data/raw/{ticker}_historical_{start}_to_{end}.csv"
+    filename = f"data/sample/{ticker}_historical_sample.csv"
     df.to_csv(filename, index=False)
-    print(f"Saved data to {filename}")
+    print(f"Saved sample data: {filename}")
