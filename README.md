@@ -11,22 +11,34 @@ Scrapes financial market data and uses machine learning to analyze trends, forec
 ## Tech Stack
 Python, pandas, NumPy, scikit-learn, matplotlib, BeautifulSoup, requests
 
-## Setup Insturctions
+## Setup Instructions
+
 1. Clone the repo:
-git clone https://github.com/srishtj/financial-forecasting-ml
-cd financial-forecasting-ml
+   ```bash
+   git clone https://github.com/srishtj/financial-forecasting-ml
+   cd financial-forecasting-ml
+   ```
 
 2. Create and activate venv:
-For mac users:
-    python3 -m venv venv
-    source venv/bin/activate
 
-For windows users:
-    python -m venv venv
-    venv\Scripts\activate
+   For mac users:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+   For windows users:
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
 
 3. Install dependencies:
-    pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 4. Run sample data generator:
-    python3 src/historical.py
+   ```bash
+   python3 src/historical.py
+   ```
