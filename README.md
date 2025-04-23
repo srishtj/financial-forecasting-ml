@@ -53,7 +53,8 @@ This repo includes pre-saved historical stock data under `data/sample/` for mult
 You can immediately run analysis and modeling notebooks using these datasets.
 
 ### How to Use
-- Explore stock performance and trends in `notebooks/eda.ipynb`
+- Explore performance and trends of a stock of your choice using `notebooks/eda.ipynb` template
+- Look at `notebooks/eda_AAPL.ipynb` for sample EDA
 - Train a predictive model in `notebooks/modeling.ipynb`
 - Compare actual vs predicted prices, and view error margins
 - Modify the scripts in `src/` to add your own tickers or update data
