@@ -19,6 +19,5 @@ def get_stock_detail(ticker):
         print("Price not found ")
         return None
 
-get_stock_detail('AAPL')
-get_stock_detail('TSLA')
-get_stock_detail('AMZN')
+ticker = input("Enter the stock name: ")
+get_stock_detail(ticker.upper());
