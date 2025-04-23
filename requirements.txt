@@ -13,3 +13,4 @@ seaborn
 
 # Machine Learning
 scikit-learn
+xgboost
